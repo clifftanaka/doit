@@ -14,8 +14,6 @@ class CreateTaskViewController: UIViewController {
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var taskSwitch: UISwitch!
     
-    var previousVC = TasksViewController()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,13 +22,13 @@ class CreateTaskViewController: UIViewController {
     
     @IBAction func addTask(_ sender: Any) {
         // Create a Task from the outlet information
-        let task = Task()
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let task = Task(context: context)
         task.name = name.text!
         task.important = taskSwitch.isOn
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
         
-        // Add new task to array in previous ViewController
-        previousVC.tasks.append(task)
-        previousVC.tableView.reloadData()
+        // Pop back
         navigationController!.popViewController(animated: true)
     }
 
