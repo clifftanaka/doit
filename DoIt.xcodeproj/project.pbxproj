@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9117A3331E7135280090A88C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9117A3321E7135280090A88C /* Task.swift */; };
+		9117A3351E7157CC0090A88C /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9117A3341E7157CC0090A88C /* CreateTaskViewController.swift */; };
+		9117A3371E7164340090A88C /* CompleteTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9117A3361E7164340090A88C /* CompleteTaskViewController.swift */; };
 		91C757A71E71322000627AA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C757A61E71322000627AA9 /* AppDelegate.swift */; };
-		91C757A91E71322000627AA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C757A81E71322000627AA9 /* ViewController.swift */; };
+		91C757A91E71322000627AA9 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C757A81E71322000627AA9 /* TasksViewController.swift */; };
 		91C757AC1E71322000627AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C757AA1E71322000627AA9 /* Main.storyboard */; };
 		91C757AF1E71322000627AA9 /* DoIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91C757AD1E71322000627AA9 /* DoIt.xcdatamodeld */; };
 		91C757B11E71322000627AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91C757B01E71322000627AA9 /* Assets.xcassets */; };
@@ -16,9 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9117A3321E7135280090A88C /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		9117A3341E7157CC0090A88C /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
+		9117A3361E7164340090A88C /* CompleteTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteTaskViewController.swift; sourceTree = "<group>"; };
 		91C757A31E71322000627AA9 /* DoIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C757A61E71322000627AA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		91C757A81E71322000627AA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91C757A81E71322000627AA9 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		91C757AB1E71322000627AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91C757AE1E71322000627AA9 /* DoIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoIt.xcdatamodel; sourceTree = "<group>"; };
 		91C757B01E71322000627AA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,8 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				91C757A61E71322000627AA9 /* AppDelegate.swift */,
-				91C757A81E71322000627AA9 /* ViewController.swift */,
+				91C757A81E71322000627AA9 /* TasksViewController.swift */,
+				9117A3361E7164340090A88C /* CompleteTaskViewController.swift */,
+				9117A3341E7157CC0090A88C /* CreateTaskViewController.swift */,
 				91C757AA1E71322000627AA9 /* Main.storyboard */,
+				9117A3321E7135280090A88C /* Task.swift */,
 				91C757B01E71322000627AA9 /* Assets.xcassets */,
 				91C757B21E71322000627AA9 /* LaunchScreen.storyboard */,
 				91C757B51E71322000627AA9 /* Info.plist */,
@@ -139,9 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9117A3331E7135280090A88C /* Task.swift in Sources */,
 				91C757AF1E71322000627AA9 /* DoIt.xcdatamodeld in Sources */,
-				91C757A91E71322000627AA9 /* ViewController.swift in Sources */,
+				9117A3371E7164340090A88C /* CompleteTaskViewController.swift in Sources */,
+				91C757A91E71322000627AA9 /* TasksViewController.swift in Sources */,
 				91C757A71E71322000627AA9 /* AppDelegate.swift in Sources */,
+				9117A3351E7157CC0090A88C /* CreateTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +315,7 @@
 				91C757BA1E71322000627AA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
